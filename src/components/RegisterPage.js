@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import WelcomePage from "./WelcomePage";
 
-
 const RegisterPage = (props) => {
   const [formData, setFormData] = useState({
     username: "",
@@ -11,7 +10,7 @@ const RegisterPage = (props) => {
   });
 
   const [error, setError] = useState({});
-     const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -23,6 +22,8 @@ const RegisterPage = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    props.setUsername(formData.username);
+    
     const validationErrors = {};
     if (!formData.username.trim()) {
       validationErrors.username = "Username is required";
@@ -43,18 +44,15 @@ const RegisterPage = (props) => {
       validationErrors.confirmPassword = "Password not matched";
     }
     setError(validationErrors);
-  
+
     if (Object.keys(validationErrors).length === 0) {
       setSubmitted(true);
       //   window.location.href = "/welcome-page";
     }
   };
   if (submitted) {
-    return <WelcomePage 
-    username={formData.username} />;
+    return <WelcomePage username={formData.username} />;
   }
-
- 
 
   return (
     <form onSubmit={handleSubmit}>
