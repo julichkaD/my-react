@@ -102,7 +102,7 @@ const RegisterPage = (props) => {
 
         {error.confirmPassword && <span>{error.confirmPassword}</span>}
       </div>
-      <button>SUBMIT</button>
+      <button className="register">SUBMIT</button>
     </form>
   );
 };
