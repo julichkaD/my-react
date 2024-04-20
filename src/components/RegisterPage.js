@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WelcomePage from "./WelcomePage";
+import "./registerPage.scss";
 
 const RegisterPage = (props) => {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ const RegisterPage = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.setUsername(formData.username);
-    
+
     const validationErrors = {};
     if (!formData.username.trim()) {
       validationErrors.username = "Username is required";
