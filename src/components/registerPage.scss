@@ -1,5 +1,77 @@
-$primaryColor: #c1946a;
-$secobdaryColor:  #405d27;
-$thirdColor:#3e4444;
+$primaryColor: #ecc5a1;
+$secondaryColor: #405d27;
+$thirdColor: #3e4444;
 $optionalColor: #82b74b;
+$borderColor: rgb(235, 229, 229);
 
+
+body {
+    background-color: $primaryColor;
+}
+
+// .App {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding-top: 80px;
+//     box-sizing: border-box;
+.register-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 30%;
+    border: 1px solid $borderColor;
+    padding: 40px;
+    border-radius: 14px;
+    padding-top: 80px;
+
+
+
+    input {
+        padding: 20px;
+        margin: 18px;
+        letter-spacing: 2px;
+        width: 90%;
+        border-radius: 6px;
+    }
+
+    label {
+        display: flex;
+        justify-content: left;
+        margin-left: 0;
+        font-weight: bold;
+        font-size: 20px;
+        color: $secondaryColor;
+        letter-spacing: 3px;
+    }
+
+    .register {
+        display: block;
+        margin: 0 auto;
+        padding: 15px 10px;
+        width: 40%;
+        margin-top: 40px;
+        border: 1px solid $borderColor;
+        border-radius: 12px;
+        background-color: $borderColor;
+        color: $secondaryColor;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        color: $borderColor;
+        font-size: 18px;
+        margin-top: 2px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+}

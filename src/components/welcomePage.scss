@@ -1,0 +1,25 @@
+$primaryColor: #f3d7be;
+$secondaryColor: #405d27;
+$thirdColor: #3e4444;
+$optionalColor: #82b74b;
+$borderColor: rgb(235, 229, 229);
+
+body {
+    background-color: $primaryColor
+}
+.bg {
+    background-image: url("https://wallpapercave.com/wp/wp3417478.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100vh; 
+
+    .welcome-page-header{
+         color: #185185;
+         text-align: center;
+         padding: 20vh;
+         font-size: 50px;
+         font-weight: 100;
+    }
+}
