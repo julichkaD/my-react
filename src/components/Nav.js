@@ -6,7 +6,7 @@ const Nav = () => {
     <div className="nav">
       <ul className="nav">
         <li>
-          <a href="/">Home</a>
+          <a href="/welcome-page">Home</a>
         </li>
         <li>
           <a href="/another-page">Books</a>

@@ -13,7 +13,7 @@ $borderColor: rgb(235, 229, 229);
     width: 100%;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: #185185;
+    background-color: #f4b57b;
   
    
 
@@ -29,7 +29,7 @@ $borderColor: rgb(235, 229, 229);
         text-decoration: none;
 
         &:hover:not(.active) {
-            background-color: rgb(33, 33, 136);
+            background-color: $secondaryColor;
             text-decoration: none; 
         }
     }
