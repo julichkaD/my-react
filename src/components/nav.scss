@@ -1,0 +1,43 @@
+$primaryColor: #ecc5a1;
+$secondaryColor: #405d27;
+$thirdColor: #3e4444;
+$optionalColor: #82b74b;
+$borderColor: rgb(235, 229, 229);
+
+
+.nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #185185;
+
+    li a {
+        display: block;
+        color: $borderColor;
+        text-align: center;
+        padding: 20px 10px;
+        margin-left: 20px;
+        font-size: 25px;
+        letter-spacing: 4px;
+        transition: background-color 0.3s;
+
+        &:hover:not(.active) {
+            background-color: rgb(33, 33, 136);
+            text-decoration: none; 
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav li {
+        float: none;
+        width: 100%;
+    }
+
+    .nav li a {
+        text-align: left;
+    }
+}
