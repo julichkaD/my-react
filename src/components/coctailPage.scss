@@ -1,0 +1,124 @@
+$primaryColor: #ecc5a1;
+$secondaryColor: #405d27;
+$thirdColor: #3e4444;
+$optionalColor: #82b74b;
+$borderColor: rgb(235, 229, 229);
+
+.container {
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+
+    form.cocktail-card {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin: 0 auto;
+
+
+        input {
+            flex: 1 0 auto; // Allows the input to expand
+            padding: 10px;
+            margin: 0 10px; // Provides space around the input
+            border: 1px solid $borderColor;
+            border-radius: 4px;
+
+            &:focus {
+                outline: none;
+                border-color: $primaryColor;
+                box-shadow: 0 0 8px rgba($primaryColor, 0.3); // Subtle focus effect
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: $secondaryColor;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($secondaryColor, 10%); // Darkens button on hover
+            }
+        }
+    }
+}
+
+.box {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+    h1,
+    h3 {
+        color: rgb(25, 120, 25);
+        margin-top: 6px;
+        letter-spacing: 2px;
+     }
+    h1 {
+        font-size: 30px;
+        color: #3e4444;
+    }
+    h2 {
+        letter-spacing: 1px;
+    }
+    span {
+        font-size: 18px;
+        color: grey;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background-color: rgb(84, 183, 84);
+        color: white;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+    }
+
+    p {
+        color: $secondaryColor;
+        font-size: 19px;
+        line-height: 1.5;
+        margin-left: 20px;
+        text-indent: 0;
+        letter-spacing: 1px;
+    }
+
+    .measure li {
+        display: inline;
+        padding: 12px;
+        margin: 8px;
+
+    }
+}
+
+.drinks {
+    font-size: 36px;
+    color: $secondaryColor;
+    letter-spacing: 2px;
+}
+
+.search {
+    color: rgb(10, 83, 10);
+    font-size: larger;
+    letter-spacing: 1px;
+}
