@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RegisterPage from "./components/RegisterPage";
 import WelcomePage from "./components/WelcomePage";
-import AnotherPage from "./components/AnotherPage";
-import "./index.css";
+import CocktailPage from "./components/CocktailPage";
+
 
 function App() {
   const [username, setUsername] = useState("");
+  
   return (
     <div className="App">
       <Router>
@@ -15,10 +16,21 @@ function App() {
             path="/"
             element={<RegisterPage setUsername={setUsername} />}
           />
-          <Route path="/welcome-page" element={<WelcomePage />} />
           <Route
-            path="/another-page"
-            element={<AnotherPage username={username} />}
+            path="/welcome-page"
+            element={
+              <WelcomePage
+                username={username}
+              />
+            }
+          />
+          <Route
+            path="/cocktail-page"
+            element={
+              <CocktailPage
+                username={username}
+              />
+            }
           />
         </Routes>
       </Router>
