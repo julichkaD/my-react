@@ -5,10 +5,11 @@ $optionalColor: #82b74b;
 $borderColor: rgb(235, 229, 229);
 
 body {
-    background-color: $primaryColor
+    background-color: $primaryColor;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .bg {
-    background-image: url("https://wallpapercave.com/wp/wp3417478.jpg");
+    background-image: url("https://cdn.recolor.com/u/8wjNJuRHx8aBaylyndi61bKBJLM2/p/L_VGNZ5a1rnc?w=640");
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -16,10 +17,12 @@ body {
     height: 100vh; 
 
     .welcome-page-header{
-         color: #185185;
+         color: $primaryColor;
          text-align: center;
-         padding: 20vh;
+         padding: 30vh;
          font-size: 50px;
-         font-weight: 100;
+         font-weight: 400;
+         letter-spacing: 6px;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
