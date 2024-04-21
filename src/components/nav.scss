@@ -6,12 +6,16 @@ $borderColor: rgb(235, 229, 229);
 
 
 .nav {
+    display: flex;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #185185;
+  
+   
 
     li a {
         display: block;
@@ -22,6 +26,7 @@ $borderColor: rgb(235, 229, 229);
         font-size: 25px;
         letter-spacing: 4px;
         transition: background-color 0.3s;
+        text-decoration: none;
 
         &:hover:not(.active) {
             background-color: rgb(33, 33, 136);
@@ -35,9 +40,11 @@ $borderColor: rgb(235, 229, 229);
     .nav li {
         float: none;
         width: 100%;
+        
     }
 
     .nav li a {
         text-align: left;
+        text-decoration: none;
     }
 }
